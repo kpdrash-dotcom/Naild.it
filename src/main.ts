@@ -288,6 +288,153 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </a>
 
 </section>
+
+<section id="sizing" class="sizing">
+
+    <div class="sizing-header">
+        <p>NAILD.IT</p>
+        <h2>Sizing Guide</h2>
+        <span>Choose the sizing method that works best for you</span>
+    </div>
+
+    
+
+    <div class="sizing-method">
+
+        <div class="method-text">
+            <h3>Soft Tape Measure</h3>
+
+            <p>
+                Place the measuring tape across the widest part of your nail.
+                Use the millimeter scale and record the width of each nail.
+            </p>
+
+            <ul>
+                <li>Most accurate method</li>
+                <li>Uses a soft measuring tape</li>
+                <li>Record all 10 nail measurements</li>
+            </ul>
+        </div>
+
+        <div class="method-images">
+            <img src="/images/tape-measure-1.png" alt="">
+            <img src="/images/tape-measure-2.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="sizing-method">
+
+        <div class="method-text">
+            <h3>Coin Method</h3>
+
+            <p>
+                Send two clear photos with a Sri Lankan Rs.2 coin beside
+                your nails. Photos should be taken directly from above.
+            </p>
+
+            <ul>
+                <li>Quick and convenient</li>
+                <li>Perfect if no tape measure is available</li>
+                <li>Use a clear overhead photo</li>
+            </ul>
+        </div>
+
+        <div class="method-images">
+            <img src="/images/coin-method-1.png" alt="">
+            <img src="/images/coin-method-2.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+<section class="size-chart-section">
+
+    <div class="size-chart-header">
+        <h2>Standard Size Chart</h2>
+        <p>
+            Please be aware there is a 1mm room for error when measuring.
+            If your measurements fall between sizes, choose the larger size.
+        </p>
+    </div>
+
+    <div class="size-chart-wrapper">
+
+        <table class="size-chart">
+
+            <thead>
+                <tr>
+                    <th>Size</th>
+                    <th>Thumb</th>
+                    <th>Index</th>
+                    <th>Middle</th>
+                    <th>Ring</th>
+                    <th>Pinky</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>L</td>
+                    <td>17</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>13</td>
+                    <td>11</td>
+                </tr>
+
+                <tr>
+                    <td>M</td>
+                    <td>16</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>12</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td>S</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td>XS</td>
+                    <td>14</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>10</td>
+                    <td>8</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="chart-note">
+        <p>
+            Scale in millimeters (mm).
+        </p>
+
+        <p>
+            Nail orders are final sale. Please ensure you choose the correct size before placing your order.
+        </p>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
 <footer class="footer">
     <div class="footer-logo">
         <img src="/images/logobag.png" alt="Naild.it">
