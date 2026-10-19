@@ -1,12 +1,16 @@
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
+
+
+
 <header class="header">
 
     <div class="left-menu">
-        <button class="menu-btn">
-            ☰ MENU
-        </button>
+        <button id="menu-btn" class="menu-btn">
+    ☰ MENU
+</button>
+
     </div>
 
     <div class="center-logo">
@@ -14,11 +18,42 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
 
     <div class="right-icons">
-        <button>⌕</button>
-        <button>👜</button>
-    </div>
+    
+</div>
+</div>
 
 </header>
+
+
+
+
+
+
+
+<div id="side-menu" class="side-menu">
+
+    <button id="close-menu" class="close-menu">✕</button>
+
+    <div class="menu-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="menu-footer">
+        <p>© 2026 Naild.it</p>
+        <p>All Rights Reserved.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
 
 <section class="hero">
     <div class="hero-text">
@@ -34,16 +69,19 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         </h1>
 
         <a href="#about" class="hero-btn">
-            ABOUT US →
+            ABOUT US
         </a>
 
     </div>
 
     <div class="hero-image">
-  <img
-    src="/images/tagimg.jpeg"
-    alt="Naild.it"
-  />
+  <div class="slideshow">
+    <img src="/images/tagimg.jpeg" class="slide active" alt="Nail Design 1">
+    <img src="/images/tagimg2.jpeg" class="slide" alt="Nail Design 2">
+    <img src="/images/tagimg3.jpeg" class="slide" alt="Logo">
+    <img src="/images/tagimg4.jpeg" class="slide" alt="Nail Design 3">
+  </div>
+</div>
 </div>
 
 </section>
@@ -72,58 +110,181 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <div class="service-grid">
 
-        <div class="service-card">
-            <h3>Gel Nails</h3>
-            <p>Elegant, durable and glossy finishes.</p>
+        <div class="service-card"
+     data-title="Gel Nails"
+     data-img="/images/tagimg2.jpeg"
+     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
+    <h3>Gel Nails</h3>
+    <p>Elegant, durable and glossy finishes.</p>
+</div>
+
+        
+
+<div class="service-card"
+     data-title="Gel Nails"
+     data-img="/images/tagimg2.jpeg"
+     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
+    <h3>Gel Nails</h3>
+    <p>Elegant, durable and glossy finishes.</p>
+</div>
+
+
+
+<div class="service-card"
+     data-title="Gel Nails"
+     data-img="/images/tagimg2.jpeg"
+     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
+    <h3>Gel Nails</h3>
+    <p>Elegant, durable and glossy finishes.</p>
+</div>
+
+
+
+<div class="service-card"
+     data-title="Gel Nails"
+     data-img="/images/tagimg2.jpeg"
+     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
+    <h3>Gel Nails</h3>
+    <p>Elegant, durable and glossy finishes.</p>
+</div>
+
+    </div>
+
+</section>
+
+
+
+
+<div id="serviceModal" class="service-modal">
+
+  <div class="service-modal-content">
+
+    <span id="closeModal" class="close-modal">✕</span>
+
+    <img id="modalImg" src="" alt="">
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalDesc"></p>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<section id="services" class="pricing">
+
+    <div class="pricing-header">
+        <p>NAILD.IT</p>
+        <h2>Price List</h2>
+    </div>
+
+    <div class="tier">
+
+        <h3>BASIC</h3>
+
+        <div class="price-row">
+            <span>Simple Color Polish</span>
+            <span>Rs. 1800</span>
         </div>
 
-        <div class="service-card">
-            <h3>Acrylic Nails</h3>
-            <p>Custom lengths and luxury styling.</p>
+        <div class="price-row">
+            <span>French Tips (Per Nail)</span>
+            <span>Rs. 250</span>
         </div>
 
-        <div class="service-card">
-            <h3>Nail Art</h3>
-            <p>Minimalist to statement designs.</p>
+    </div>
+
+    <div class="tier">
+
+        <h3>INTERMEDIATE</h3>
+
+        <div class="price-row">
+            <span>Ombre</span>
+            <span>Rs. 250</span>
         </div>
 
-        <div class="service-card">
-            <h3>Manicure & Pedicure</h3>
-            <p>Complete nail care and relaxation.</p>
+        <div class="price-row">
+            <span>Chrome</span>
+            <span>Rs. 350</span>
+        </div>
+
+        <div class="price-row">
+            <span>Minimalist Line Art</span>
+            <span>Rs. 250</span>
+        </div>
+
+        <div class="price-row">
+            <span>Marble</span>
+            <span>Rs. 350</span>
+        </div>
+
+        <div class="price-row">
+            <span>Negative Space</span>
+            <span>Rs. 250</span>
+        </div>
+
+        <div class="price-row">
+            <span>Animal Print</span>
+            <span>Rs. 250</span>
+        </div>
+
+        <div class="price-row">
+            <span>Abstract Print</span>
+            <span>Rs. 250</span>
+        </div>
+
+    </div>
+
+    <div class="tier">
+
+        <h3>ADVANCED</h3>
+
+        <div class="price-row">
+            <span>3D Design</span>
+            <span>Rs. 300-500</span>
+        </div>
+
+        <div class="price-row">
+            <span>Charms (Per)</span>
+            <span>Rs. 100</span>
+        </div>
+
+        <div class="price-row">
+            <span>Bows (Per)</span>
+            <span>Rs. 150</span>
+        </div>
+
+        <div class="price-row">
+            <span>Rhinestone (Per)</span>
+            <span>Rs. 100</span>
         </div>
 
     </div>
 
 </section>
 
-<section id="gallery" class="gallery">
 
-    <h2>Gallery</h2>
-
-    <div class="gallery-grid">
-
-        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=600&q=80">
-
-        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=600&q=80">
-
-        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80">
-
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80">
-
-    </div>
-
-</section>
 
 <section id="contact" class="contact">
 
     <h2>Book Your Appointment</h2>
 
     <p>
-        Experience premium nail care designed around you.
+        Experience luxury nail artistry designed around your style.
+        Secure your appointment today and let Naild.it create your perfect set.
     </p>
 
-    <a href="#" class="hero-btn">
-        CONTACT US →
+    <a href="#">
+        Book Now 
     </a>
 
 </section>
@@ -133,11 +294,81 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
 
     <div class="footer-links">
-        <a href="#">Instagram</a>
-        <a href="#">TikTok</a>
-        <a href="#">WhatsApp</a>
-    </div>
+
+  <a href="https://instagram.com/yourpage">
+    <img src="/images/instagram.png" class="instagram-icon" alt="Instagram">
+  </a>
+
+  
+
+  <a href="https://wa.me/94713119127">
+    <img src="/images/whatsapp.png" class="whatsapp-icon" alt="WhatsApp">
+  </a>
+
+</div>
 
     <p>© 2026 Naild.it. All rights reserved.</p>
 </footer>
 `;
+
+
+const slides = document.querySelectorAll('.slide');
+
+let currentSlide = 0;
+
+setInterval(() => {
+  slides[currentSlide].classList.remove('active');
+
+  currentSlide = (currentSlide + 1) % slides.length;
+
+  slides[currentSlide].classList.add('active');
+}, 3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const modal = document.getElementById("serviceModal")!;
+const modalImg = document.getElementById("modalImg") as HTMLImageElement;
+const modalTitle = document.getElementById("modalTitle")!;
+const modalDesc = document.getElementById("modalDesc")!;
+const closeModal = document.getElementById("closeModal")!;
+
+document.querySelectorAll(".service-card").forEach(card => {
+
+  card.addEventListener("click", () => {
+
+    modalImg.src = card.getAttribute("data-img") || "";
+
+    modalTitle.textContent =
+      card.getAttribute("data-title") || "";
+
+    modalDesc.textContent =
+      card.getAttribute("data-desc") || "";
+
+    modal.classList.add("active");
+
+  });
+
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+  }
+});
