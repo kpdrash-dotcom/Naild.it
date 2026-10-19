@@ -114,23 +114,23 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <div class="service-grid">
 
     <a href="/trending1.html" class="service-card">
-        <h3>Gel Nails</h3>
-        <p>Elegant, durable and glossy finishes.</p>
+        <h3>Bedazzled Nails</h3>
+        <p>kenara's ideas.</p>
     </a>
 
     <a href="/trending2.html" class="service-card">
-        <h3>Acrylic Nails</h3>
-        <p>Custom lengths and luxury styling.</p>
+        <h3>Desi Nails</h3>
+        <p>kenara's ideas.</p>
     </a>
 
     <a href="/trending3.html" class="service-card">
-        <h3>Nail Art</h3>
-        <p>Minimalist to statement designs.</p>
+        <h3>Champagne Nails</h3>
+        <p>kenara's ideas.</p>
     </a>
 
     <a href="/trending4.html" class="service-card">
-        <h3>Manicure & Pedicure</h3>
-        <p>Complete nail care and relaxation.</p>
+        <h3>ask from Kenara</h3>
+        <p>kenara's ideas.</p>
     </a>
 
 </div>
@@ -458,36 +458,33 @@ setInterval(() => {
 
 
 
-const modal = document.getElementById("serviceModal")!;
-const modalImg = document.getElementById("modalImg") as HTMLImageElement;
-const modalTitle = document.getElementById("modalTitle")!;
-const modalDesc = document.getElementById("modalDesc")!;
-const closeModal = document.getElementById("closeModal")!;
+/* =========================
+   MENU
+========================= */
 
-document.querySelectorAll(".service-card").forEach(card => {
+const menuBtn = document.getElementById("menu-btn");
+const closeMenu = document.getElementById("close-menu");
+const sideMenu = document.getElementById("side-menu");
+const overlay = document.getElementById("menu-overlay");
 
-  card.addEventListener("click", () => {
+menuBtn?.addEventListener("click", () => {
+  sideMenu?.classList.add("active");
+  overlay?.classList.add("active");
+});
 
-    modalImg.src = card.getAttribute("data-img") || "";
+closeMenu?.addEventListener("click", () => {
+  sideMenu?.classList.remove("active");
+  overlay?.classList.remove("active");
+});
 
-    modalTitle.textContent =
-      card.getAttribute("data-title") || "";
+overlay?.addEventListener("click", () => {
+  sideMenu?.classList.remove("active");
+  overlay?.classList.remove("active");
+});
 
-    modalDesc.textContent =
-      card.getAttribute("data-desc") || "";
-
-    modal.classList.add("active");
-
+document.querySelectorAll(".menu-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    sideMenu?.classList.remove("active");
+    overlay?.classList.remove("active");
   });
-
-});
-
-closeModal.addEventListener("click", () => {
-  modal.classList.remove("active");
-});
-
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("active");
-  }
 });
