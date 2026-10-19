@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg:#f6f2eb;
+    --text:#684b36;
+    --accent:#9b7354;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'IBM Plex Mono', monospace;
+}
+
+/* HERO */
+
+.service-page{
+    max-width:1200px;
+    margin:auto;
+    padding:140px 8% 100px;
+}
+
+.service-page h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:5rem;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.service-page > p{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 60px;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+/* GALLERY */
+
+.service-gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:80px;
+}
+
+.service-gallery img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.service-gallery img:hover{
+    transform:translateY(-8px);
+}
+
+/* DESCRIPTION */
+
+.service-info{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    margin-bottom:60px;
+}
+
+.service-info h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.service-info p{
+    line-height:2;
+}
+
+/* PRICE */
+
+.service-price{
+    text-align:center;
+    padding:50px;
+    background:white;
+
+    border-radius:25px;
+
+    margin-bottom:60px;
+}
+
+.service-price h3{
+    font-size:1.2rem;
+    letter-spacing:3px;
+
+    color:var(--accent);
+
+    margin-bottom:15px;
+}
+
+.service-price span{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+}
+
+/* BUTTONS */
+
+.page-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-width:220px;
+    height:60px;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s ease;
+}
+
+.btn-primary{
+    background:#8b6a52;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#6f523d;
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+    border:2px solid #8b6a52;
+    color:#8b6a52;
+}
+
+.btn-outline:hover{
+    background:#8b6a52;
+    color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .service-page{
+        padding:120px 20px 80px;
+    }
+
+    .service-page h1{
+        font-size:3rem;
+    }
+
+    .service-gallery{
+        grid-template-columns:1fr;
+    }
+
+    .service-gallery img{
+        height:350px;
+    }
+
+    .service-info{
+        padding:30px;
+    }
+
+    .service-info h2{
+        font-size:2rem;
+    }
+
+    .service-price span{
+        font-size:2.3rem;
+    }
+
+    .btn{
+        width:100%;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+body{
+    margin:0;
+    background:#f6f2eb;
+    color:#684b36;
+    font-family:'IBM Plex Mono', monospace;
+}
+
+.service-page{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:14px 26px;
+
+    background:#fff;
+    color:#684b36;
+
+    border:1px solid rgba(104,75,54,.15);
+    border-radius:50px;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    transition:.3s ease;
+
+    margin-bottom:60px;
+}
+
+.back-btn:hover{
+    background:#684b36;
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+.service-page h1{
+    text-align:center;
+
+    font-family:'Cormorant Garamond', serif;
+    font-size:5rem;
+
+    margin-bottom:20px;
+}
+
+.service-intro{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 60px;
+
+    line-height:1.8;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+
+    margin-bottom:60px;
+}
+
+.image-frame{
+    background:white;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    border:1px solid rgba(104,75,54,.1);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.image-frame:hover{
+    transform:translateY(-6px);
+}
+
+.image-frame img{
+    width:100%;
+    height:550px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    display:block;
+}
+
+.service-content{
+    background:white;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.service-content h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+
+    margin-bottom:20px;
+}
+
+.service-content p{
+    line-height:1.9;
+    margin-bottom:15px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .service-page{
+        padding:60px 20px;
+    }
+
+    .service-page h1{
+        font-size:3rem;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .image-frame img{
+        height:380px;
+    }
+
+    .service-content{
+        padding:30px;
+    }
+
+    .back-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+}

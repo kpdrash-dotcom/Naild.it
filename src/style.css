@@ -968,9 +968,46 @@ body.dark .close-menu{
 
 
 
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+    max-width:900px;
+    margin:auto;
+}
 
+.service-card{
+    background:#fff;
+    padding:25px 30px;
+    border-radius:20px;
+    text-decoration:none;
+    color:var(--text);
 
+    border:1px solid rgba(104,75,54,.12);
 
+    transition:all .3s ease;
+}
 
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
 
+.service-card h3{
+    font-size:1.4rem;
+    margin-bottom:8px;
+    color:#684b36;
+}
 
+.service-card p{
+    font-size:.9rem;
+    opacity:.8;
+    line-height:1.6;
+}
+@media (max-width:768px){
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -106,70 +106,42 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
 <section id="services" class="services">
 
-    <h2>Services</h2>
+    <div class="pricing-header">
+        <h2>Trendings</h2>
+    </div>
+
 
     <div class="service-grid">
 
-        <div class="service-card"
-     data-title="Gel Nails"
-     data-img="/images/tagimg2.jpeg"
-     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
-    <h3>Gel Nails</h3>
-    <p>Elegant, durable and glossy finishes.</p>
+    <a href="public/trending1.html" class="service-card">
+        <h3>Gel Nails</h3>
+        <p>Elegant, durable and glossy finishes.</p>
+    </a>
+
+    <a href="public/trending2.html" class="service-card">
+        <h3>Acrylic Nails</h3>
+        <p>Custom lengths and luxury styling.</p>
+    </a>
+
+    <a href="public/trending3.html" class="service-card">
+        <h3>Nail Art</h3>
+        <p>Minimalist to statement designs.</p>
+    </a>
+
+    <a href="public/trending4.html" class="service-card">
+        <h3>Manicure & Pedicure</h3>
+        <p>Complete nail care and relaxation.</p>
+    </a>
+
 </div>
-
-        
-
-<div class="service-card"
-     data-title="Gel Nails"
-     data-img="/images/tagimg2.jpeg"
-     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
-    <h3>Gel Nails</h3>
-    <p>Elegant, durable and glossy finishes.</p>
-</div>
-
-
-
-<div class="service-card"
-     data-title="Gel Nails"
-     data-img="/images/tagimg2.jpeg"
-     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
-    <h3>Gel Nails</h3>
-    <p>Elegant, durable and glossy finishes.</p>
-</div>
-
-
-
-<div class="service-card"
-     data-title="Gel Nails"
-     data-img="/images/tagimg2.jpeg"
-     data-desc="Premium gel nail application with long-lasting shine and elegant finishing.">
-    <h3>Gel Nails</h3>
-    <p>Elegant, durable and glossy finishes.</p>
-</div>
-
-    </div>
 
 </section>
 
 
 
 
-<div id="serviceModal" class="service-modal">
 
-  <div class="service-modal-content">
 
-    <span id="closeModal" class="close-modal">✕</span>
-
-    <img id="modalImg" src="" alt="">
-
-    <h2 id="modalTitle"></h2>
-
-    <p id="modalDesc"></p>
-
-  </div>
-
-</div>
 
 
 
