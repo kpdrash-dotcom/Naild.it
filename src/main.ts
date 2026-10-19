@@ -113,22 +113,22 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <div class="service-grid">
 
-    <a href="public/trending1.html" class="service-card">
+    <a href="/trending1.html" class="service-card">
         <h3>Gel Nails</h3>
         <p>Elegant, durable and glossy finishes.</p>
     </a>
 
-    <a href="public/trending2.html" class="service-card">
+    <a href="/trending2.html" class="service-card">
         <h3>Acrylic Nails</h3>
         <p>Custom lengths and luxury styling.</p>
     </a>
 
-    <a href="public/trending3.html" class="service-card">
+    <a href="/trending3.html" class="service-card">
         <h3>Nail Art</h3>
         <p>Minimalist to statement designs.</p>
     </a>
 
-    <a href="public/trending4.html" class="service-card">
+    <a href="/trending4.html" class="service-card">
         <h3>Manicure & Pedicure</h3>
         <p>Complete nail care and relaxation.</p>
     </a>
