@@ -114,12 +114,12 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <div class="service-grid">
 
     <a href="/trending1.html" class="service-card">
-        <h3>Bedazzled Nails</h3>
+        <h3>Desi Nails</h3>
         <p></p>
     </a>
 
     <a href="/trending2.html" class="service-card">
-        <h3>Desi Nails</h3>
+        <h3>Bedazzled Nails</h3>
         <p></p>
     </a>
 
