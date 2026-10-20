@@ -115,22 +115,22 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <a href="/trending1.html" class="service-card">
         <h3>Bedazzled Nails</h3>
-        <p>kenara's ideas.</p>
+        <p></p>
     </a>
 
     <a href="/trending2.html" class="service-card">
         <h3>Desi Nails</h3>
-        <p>kenara's ideas.</p>
+        <p></p>
     </a>
 
     <a href="/trending3.html" class="service-card">
         <h3>Champagne Nails</h3>
-        <p>kenara's ideas.</p>
+        <p></p>
     </a>
 
     <a href="/trending4.html" class="service-card">
         <h3>ask from Kenara</h3>
-        <p>kenara's ideas.</p>
+        <p></p>
     </a>
 
 </div>
@@ -218,7 +218,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <div class="tier">
 
-        <h3>ADVANCED</h3>
+        <h3>ADVANCED (Per Nail)</h3>
 
         <div class="price-row">
             <span>3D Design</span>
@@ -226,17 +226,17 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         </div>
 
         <div class="price-row">
-            <span>Charms (Per)</span>
+            <span>Charms</span>
             <span>Rs. 100</span>
         </div>
 
         <div class="price-row">
-            <span>Bows (Per)</span>
+            <span>Bows</span>
             <span>Rs. 150</span>
         </div>
 
         <div class="price-row">
-            <span>Rhinestone (Per)</span>
+            <span>Rhinestone</span>
             <span>Rs. 100</span>
         </div>
 
@@ -269,31 +269,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <span>Choose the sizing method that works best for you</span>
     </div>
 
-    
-
-    <div class="sizing-method">
-
-        <div class="method-text">
-            <h3>Soft Tape Measure</h3>
-
-            <p>
-                Place the measuring tape across the widest part of your nail.
-                Use the millimeter scale and record the width of each nail.
-            </p>
-
-            <ul>
-                <li>Most accurate method</li>
-                <li>Uses a soft measuring tape</li>
-                <li>Record all 10 nail measurements</li>
-            </ul>
-        </div>
-
-        <div class="method-images">
-            <img src="/images/tape-measure-1.png" alt="">
-            <img src="/images/tape-measure-2.png" alt="">
-        </div>
-
-    </div>
 
     <div class="sizing-method">
 

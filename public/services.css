@@ -19,6 +19,47 @@ body{
     font-family:'IBM Plex Mono', monospace;
 }
 
+/* Home */
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 24px;
+  margin: 20px;
+
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+
+  border-radius: 50px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.home-btn:hover {
+  background: #fff;
+  color: #111;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.home-btn span {
+  transition: transform 0.3s ease;
+}
+
+.home-btn:hover span {
+  transform: translateX(-4px);
+}
+
+
 /* HERO */
 
 .service-page{
@@ -42,307 +83,106 @@ body{
     font-size:1rem;
 }
 
-/* GALLERY */
-
-.service-gallery{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-    margin-bottom:80px;
+.trending {
+  padding: 80px 6%;
+  background: #fff;
 }
 
-.service-gallery img{
-    width:100%;
-    height:550px;
-    object-fit:cover;
-    border-radius:25px;
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    transition:.3s;
+.trending h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
 
-.service-gallery img:hover{
-    transform:translateY(-8px);
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
-/* DESCRIPTION */
-
-.service-info{
-    background:white;
-    padding:50px;
-    border-radius:25px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
-
-    margin-bottom:60px;
+.product-card {
+  position: relative;
+  overflow: hidden;
 }
 
-.service-info h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:3rem;
-    margin-bottom:20px;
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #f4f4f4;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  z-index: 5;
 }
 
-.service-info p{
-    line-height:2;
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
-/* PRICE */
-
-.service-price{
-    text-align:center;
-    padding:50px;
-    background:white;
-
-    border-radius:25px;
-
-    margin-bottom:60px;
+.product-card:hover img {
+  transform: scale(1.06);
 }
 
-.service-price h3{
-    font-size:1.2rem;
-    letter-spacing:3px;
-
-    color:var(--accent);
-
-    margin-bottom:15px;
+.add-btn {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: none;
+  padding: 12px 28px;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  letter-spacing: 2px;
 }
 
-.service-price span{
-    font-family:'Cormorant Garamond', serif;
-    font-size:3rem;
+.product-card:hover .add-btn {
+  opacity: 1;
 }
 
-/* BUTTONS */
-
-.page-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+.product-card h3 {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-
-    min-width:220px;
-    height:60px;
-
-    text-decoration:none;
-
-    border-radius:50px;
-
-    transition:.3s ease;
+.price {
+  margin-top: 10px;
 }
 
-.btn-primary{
-    background:#8b6a52;
-    color:white;
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 12px;
+  font-size: 0.95rem;
 }
 
-.btn-primary:hover{
-    background:#6f523d;
-    transform:translateY(-4px);
+.new-price {
+  font-weight: 600;
 }
 
-.btn-outline{
-    border:2px solid #8b6a52;
-    color:#8b6a52;
-}
+@media (max-width: 768px) {
 
-.btn-outline:hover{
-    background:#8b6a52;
-    color:white;
-}
+  .trending {
+    padding: 50px 4%;
+  }
 
-/* MOBILE */
+  .trending h2 {
+    font-size: 2rem;
+  }
 
-@media(max-width:768px){
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-    .service-page{
-        padding:120px 20px 80px;
-    }
-
-    .service-page h1{
-        font-size:3rem;
-    }
-
-    .service-gallery{
-        grid-template-columns:1fr;
-    }
-
-    .service-gallery img{
-        height:350px;
-    }
-
-    .service-info{
-        padding:30px;
-    }
-
-    .service-info h2{
-        font-size:2rem;
-    }
-
-    .service-price span{
-        font-size:2.3rem;
-    }
-
-    .btn{
-        width:100%;
-    }
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
-
-body{
-    margin:0;
-    background:#f6f2eb;
-    color:#684b36;
-    font-family:'IBM Plex Mono', monospace;
-}
-
-.service-page{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 30px;
-}
-
-.back-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-
-    padding:14px 26px;
-
-    background:#fff;
-    color:#684b36;
-
-    border:1px solid rgba(104,75,54,.15);
-    border-radius:50px;
-
-    text-decoration:none;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
-
-    transition:.3s ease;
-
-    margin-bottom:60px;
-}
-
-.back-btn:hover{
-    background:#684b36;
-    color:white;
-
-    transform:translateY(-3px);
-}
-
-.service-page h1{
-    text-align:center;
-
-    font-family:'Cormorant Garamond', serif;
-    font-size:5rem;
-
-    margin-bottom:20px;
-}
-
-.service-intro{
-    text-align:center;
-    max-width:700px;
-    margin:0 auto 60px;
-
-    line-height:1.8;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-
-    margin-bottom:60px;
-}
-
-.image-frame{
-    background:white;
-
-    padding:15px;
-
-    border-radius:30px;
-
-    border:1px solid rgba(104,75,54,.1);
-
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-    transition:.3s;
-}
-
-.image-frame:hover{
-    transform:translateY(-6px);
-}
-
-.image-frame img{
-    width:100%;
-    height:550px;
-
-    object-fit:cover;
-
-    border-radius:18px;
-
-    display:block;
-}
-
-.service-content{
-    background:white;
-
-    padding:50px;
-
-    border-radius:30px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
-}
-
-.service-content h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:3rem;
-
-    margin-bottom:20px;
-}
-
-.service-content p{
-    line-height:1.9;
-    margin-bottom:15px;
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-    .service-page{
-        padding:60px 20px;
-    }
-
-    .service-page h1{
-        font-size:3rem;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .image-frame img{
-        height:380px;
-    }
-
-    .service-content{
-        padding:30px;
-    }
-
-    .back-btn{
-        width:100%;
-        justify-content:center;
-    }
-
+  .add-btn {
+    opacity: 1;
+  }
 }
