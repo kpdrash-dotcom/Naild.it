@@ -106,45 +106,91 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
 </section>
 
-<section id="services" class="services">
 
-    <div class="pricing-header">
-        <h2>Trendings</h2>
+
+
+
+
+
+
+<section class="new-arrivals">
+
+    <div class="section-header">
+        <div>
+            <span class="subtitle">Top Trendings</span>
+            <h2>Desi Nails</h2>
+        </div>
+
+        <a href="trending1.html" class="view-all-btn">
+            VIEW MORE
+        </a>
     </div>
 
+    <div class="products-grid">
 
-    <div class="service-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/desi1.jpeg" alt="">
+            <h3>Ruby Bloom</h3>
+        </div>
 
-    <a href="/trending1.html" class="service-card">
-        <h3>Desi Nails</h3>
-        <p></p>
-    </a>
+        <!-- Product 2 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/desi2.jpeg" alt="">
+            <h3>Emerald Glow</h3>
+        </div>
 
-    <a href="/trending2.html" class="service-card">
-        <h3>Bedazzled Nails</h3>
-        <p></p>
-    </a>
+        <!-- Product 3 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/desi3.jpeg" alt="">
+            <h3>Golden Rose</h3>
+        </div>
 
-    <a href="/trending3.html" class="service-card">
-        <h3>Champagne Nails</h3>
-        <p></p>
-    </a>
+        
 
-    <a href="/trending4.html" class="service-card">
-        <h3>ask from Kenara</h3>
-        <p></p>
-    </a>
+    </div>
+    <div class="section-header">
+        <div>
+            
+            <h2>Bedazzled Nails</h2>
+        </div>
 
-</div>
+        <a href="trending2.html" class="view-all-btn">
+            VIEW MORE
+        </a>
+    </div>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/Bedazzled1.jpeg" alt="">
+            <h3>Ruby Bloom</h3>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/Bedazzled2.jpeg" alt="">
+            <h3>Emerald Glow</h3>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/Bedazzled3.jpeg" alt="">
+            <h3>Golden Rose</h3>
+        </div>
+
+        
+
+    </div>
 
 </section>
-
-
-
-
-
-
-
 
 
 

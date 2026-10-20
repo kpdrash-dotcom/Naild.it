@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,15 +9,46 @@
     <title>Gel Nails | Naild.it</title>
 
     <link rel="stylesheet" href="/services.css">
+    
+    <header class="header">
+
+    <div class="left-menu">
+        <button id="menu-btn" class="menu-btn">
+            ☰ MENU
+        </button>
+    </div>
+
+    <div class="center-logo">
+        <img src="/images/logobag.png" alt="Naild.it">
+    </div>
+
+    <div class="right-icons"></div>
+
+</header>
+
+<div id="side-menu" class="side-menu">
+
+    <button id="close-menu" class="close-menu">✕</button>
+
+    <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="menu-footer">
+        <p>© 2026 Naild.it</p>
+        <p>All Rights Reserved.</p>
+    </div>
+
+</div>
+
+<div id="menu-overlay" class="menu-overlay"></div>
 </head>
 
 <body>
 
     <section class="trending">
-
-       <a href="/" class="home-btn">
-  <span></span> Home
-</a>
 
   <h2>Trending Products</h2>
 
@@ -112,6 +144,7 @@
       </div>
     </div>
 
+<<<<<<< HEAD
     <div class="product-card">
       <span class="discount-badge">20% OFF</span>
 
@@ -126,11 +159,35 @@
         <span class="new-price">LKR 2,392</span>
       </div>
     </div>
+=======
+    
+>>>>>>> dfd12bd (Updated homepage collections and trending pages)
 
   </div>
 </section>
 
-
+<script src="trending1.js"></script>
 </body>
 
 </html>
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const closeMenu = document.getElementById("close-menu");
+const sideMenu = document.getElementById("side-menu");
+const overlay = document.getElementById("menu-overlay");
+
+menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("active");
+    overlay.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+</script>

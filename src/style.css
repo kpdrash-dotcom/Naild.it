@@ -83,41 +83,7 @@ body{
     align-items:center;
 }
 
-/* =========================
-   THEME TOGGLE
-========================= */
 
-.theme-toggle{
-    width:58px;
-    height:30px;
-
-    background:#000;
-    border:none;
-    border-radius:30px;
-
-    position:relative;
-    cursor:pointer;
-
-    transition:all .3s ease;
-}
-
-.theme-toggle:hover{
-    transform:scale(1.05);
-}
-
-.toggle-knob{
-    position:absolute;
-    top:3px;
-    left:3px;
-
-    width:24px;
-    height:24px;
-
-    background:#fff;
-    border-radius:50%;
-
-    transition:all .3s ease;
-}
 
 /* =========================
    HERO
@@ -183,37 +149,7 @@ body{
    SERVICES
 ========================= */
 
-.services{
-    padding:120px 8%;
-}
 
-.services h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:4rem;
-    margin-bottom:50px;
-}
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.service-card{
-    background:#fff;
-    padding:40px;
-    border-radius:10px;
-
-    transition:.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-8px);
-}
-
-.service-card h3{
-    margin-bottom:15px;
-}
 
 /* =========================
    PRICING
@@ -415,76 +351,7 @@ body{
     opacity:.7;
 }
 
-/* =========================
-   DARK THEME
-========================= */
 
-body.dark{
-    --bg:#121212;
-    --text:#f6f2eb;
-    --accent:#c9b08d;
-
-    background:#121212;
-    color:#f6f2eb;
-}
-
-body.dark .header{
-    background:rgba(18,18,18,.95);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-body.dark .theme-toggle{
-    background:#fff;
-}
-
-body.dark .toggle-knob{
-    left:31px;
-    background:#000;
-}
-
-body.dark .service-card,
-body.dark .tier{
-    background:#1f1f1f;
-    color:#fff;
-}
-
-body.dark .footer{
-    background:#181818;
-}
-
-body.dark .footer-links a{
-    background:#222;
-    border-color:#444;
-}
-
-body.dark .about,
-body.dark .gallery,
-body.dark .pricing{
-    color:#fff;
-}
-
-body.dark .menu-btn,
-body.dark .hero-btn{
-    color:#fff;
-}
-
-body.dark .hero-btn{
-    border-bottom:1px solid #fff;
-}
-
-body.dark .contact{
-    background:#242424;
-}
-
-body.dark .contact a{
-    background:#fff;
-    color:#000;
-}
-
-body.dark .contact a:hover{
-    background:#000;
-    color:#fff;
-}
 
 /* =========================
    MOBILE
@@ -680,6 +547,12 @@ body.dark .close-menu{
     color:white;
 }
 
+
+
+
+
+
+
 .hero-image{
     position:relative;
     width:100%;
@@ -725,64 +598,6 @@ body.dark .close-menu{
 
 
 
-.service-modal{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.8);
-
-    display:none;
-    justify-content:center;
-    align-items:center;
-
-    z-index:9999;
-}
-
-.service-modal.active{
-    display:flex;
-}
-
-.service-modal-content{
-    background:white;
-    width:90%;
-    max-width:700px;
-    border-radius:20px;
-    overflow:hidden;
-    position:relative;
-}
-
-.service-modal-content img{
-    width:100%;
-    height:400px;
-    object-fit:cover;
-}
-
-.service-modal-content h2{
-    padding:20px 25px 10px;
-}
-
-.service-modal-content p{
-    padding:0 25px 25px;
-    line-height:1.8;
-}
-
-.close-modal{
-    position:absolute;
-    top:15px;
-    right:20px;
-
-    color:white;
-    font-size:30px;
-    cursor:pointer;
-}
-
-
-#modalImg{
-    display:block !important;
-    width:100% !important;
-    height:250px !important;
-    object-fit:cover !important;
-    background:red;
-}
 
 
 
@@ -964,50 +779,98 @@ body.dark .close-menu{
 }
 
 
+/* =========================
+   trendings
+========================= */
 
 
 
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:20px;
-    max-width:900px;
-    margin:auto;
+.new-arrivals{
+    padding:80px 5%;
+    background:#faf8f4;
 }
 
-.service-card{
-    background:#fff;
-    padding:25px 30px;
-    border-radius:20px;
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom:40px;
+}
+
+.subtitle{
+    font-size:12px;
+    letter-spacing:4px;
+    color:#777;
+}
+
+.section-header h2{
+    font-size:3rem;
+    margin-top:10px;
+    color:#111;
+}
+
+.view-all-btn{
     text-decoration:none;
-    color:var(--text);
-
-    border:1px solid rgba(104,75,54,.12);
-
-    transition:all .3s ease;
+    color:#111;
+    font-size:14px;
+    letter-spacing:2px;
+    border-bottom:1px solid #111;
+    padding-bottom:4px;
 }
 
-.service-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
 }
 
-.service-card h3{
-    font-size:1.4rem;
-    margin-bottom:8px;
-    color:#684b36;
+.product-card{
+    position:relative;
 }
 
-.service-card p{
-    font-size:.9rem;
-    opacity:.8;
-    line-height:1.6;
+.product-card img{
+    width:100%;
+    aspect-ratio:1/1.2;
+    object-fit:cover;
+    transition:.4s;
 }
-@media (max-width:768px){
 
-    .service-grid{
-        grid-template-columns:1fr;
+.product-card:hover img{
+    transform:scale(1.03);
+}
+
+.discount-badge{
+    position:absolute;
+    top:12px;
+    left:12px;
+
+    background:white;
+    padding:6px 12px;
+    font-size:12px;
+}
+
+.product-card h3{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:500;
+}
+@media(max-width:768px){
+
+    .products-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:10px;
     }
 
+    .section-header h2{
+        font-size:2rem;
+    }
+
+    .product-card h3{
+        font-size:12px;
+    }
+
+    .discount-badge{
+        font-size:9px;
+        padding:4px 6px;
+    }
 }
