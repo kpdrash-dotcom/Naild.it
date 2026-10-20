@@ -59,7 +59,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <div class="hero-text">
 
         <p class="small-text">
-            Luxury nail artistry for modern women.
+            A little romance, designed for you.
         </p>
 
         <h1>
@@ -91,13 +91,15 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <div class="section-content">
 
         <p>
-        At Naild.it, we believe beautiful nails should be part of everyday life,
-        not just special occasions.
+        We believe beauty lies in the little details…
+        Each set of press-on nails is designed with a touch of effortless elegance.
+        From delicate details to graceful designs,
+        
         </p>
 
         <p>
-        Our studio combines expert craftsmanship, premium products and elegant
-        designs to create a luxury experience you'll want to return to again and again.
+        Every set is made to make you feel pretty and effortlessly chic.
+        Bringing a little romance to your everyday beauty.
         </p>
 
     </div>
