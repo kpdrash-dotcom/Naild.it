@@ -1,5 +1,4 @@
 
-  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,28 +10,44 @@
 
     <link rel="stylesheet" href="/services.css">
     
-    <header class="header">
+    
+</head>
 
- <button id="menu-btn">☰</button>
+<body>
+<header class="header">
 
-<div id="side-menu">
-    <a href="index.html">Home</a>
-    <a href="trending1.html">Trending</a>
-    <a href="contact.html">Contact</a>
-</div>
+    <div class="left-menu">
+        <button id="menu-btn" class="menu-btn">
+            ☰ MENU
+        </button>
+    </div>
 
     <div class="center-logo">
         <img src="/images/logobag.png" alt="Naild.it">
     </div>
-    
-</div>
-</div>
+
+    <div class="right-icons"></div>
 
 </header>
-</head>
 
-<body>
+<div id="side-menu" class="side-menu">
 
+    <button id="close-menu" class="close-menu">✕</button>
+
+    <div class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="menu-footer">
+        <p>© 2026 Naild.it</p>
+        <p>All Rights Reserved.</p>
+    </div>
+
+</div>
+
+<div id="menu-overlay" class="menu-overlay"></div>
     <section class="trending">
         <h2>Trending Products</h2>
 
@@ -133,7 +148,27 @@
   </div>
 </section>
 
-<script src="trending1.js"></script>
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const closeMenu = document.getElementById("close-menu");
+const sideMenu = document.getElementById("side-menu");
+const overlay = document.getElementById("menu-overlay");
+
+menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("active");
+    overlay.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+</script>
 </body>
 
 </html>
