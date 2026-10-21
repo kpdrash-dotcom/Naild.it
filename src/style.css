@@ -692,93 +692,6 @@ body.dark .close-menu{
 }
 
 
-
-
-
-
-.size-chart-section{
-    padding:120px 8%;
-    background:#f6f2eb;
-}
-
-.size-chart-header{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.size-chart-header h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:4rem;
-    margin-bottom:20px;
-}
-
-.size-chart-header p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-}
-
-.size-chart-wrapper{
-    overflow-x:auto;
-}
-
-.size-chart{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
-}
-
-.size-chart th,
-.size-chart td{
-    padding:20px;
-    text-align:center;
-    border:1px solid rgba(0,0,0,.1);
-}
-
-.size-chart th{
-    background:#8b6a52;
-    color:white;
-}
-
-.size-chart td:first-child{
-    font-weight:700;
-    background:#f7f3ee;
-}
-
-.chart-note{
-    text-align:center;
-    max-width:800px;
-    margin:40px auto 0;
-    line-height:1.8;
-}
-
-.chart-note p:first-child{
-    font-weight:600;
-    margin-bottom:10px;
-}
-
-
-
-
-
-@media(max-width:768px){
-
-    .size-chart-header h2{
-        font-size:2.5rem;
-    }
-
-    .size-chart th,
-    .size-chart td{
-        padding:12px;
-        font-size:.9rem;
-    }
-
-}
-
-
 /* =========================
    trendings
 ========================= */
@@ -873,4 +786,17 @@ body.dark .close-menu{
         font-size:9px;
         padding:4px 6px;
     }
+    @media (max-width:768px){
+
+    .section-header{
+        display:block;
+        margin-bottom:20px;
+    }
+
+    .view-all-btn{
+        display:inline-block;
+        margin-top:10px;
+    }
+
+}
 }
