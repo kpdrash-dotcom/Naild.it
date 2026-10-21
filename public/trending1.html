@@ -10,7 +10,11 @@
 
     <link rel="stylesheet" href="/services.css">
     
-    <header class="header">
+    
+</head>
+
+<body>
+  <header class="header">
 
     <div class="left-menu">
         <button id="menu-btn" class="menu-btn">
@@ -44,9 +48,6 @@
 </div>
 
 <div id="menu-overlay" class="menu-overlay"></div>
-</head>
-
-<body>
 
     <section class="trending">
     
@@ -162,10 +163,7 @@
 </div>
 </section>
 
-<script src="trending1.js"></script>
-</body>
 
-</html>
 <script>
 const menuBtn = document.getElementById("menu-btn");
 const closeMenu = document.getElementById("close-menu");
@@ -187,3 +185,6 @@ overlay.addEventListener("click", () => {
     overlay.classList.remove("active");
 });
 </script>
+</body>
+
+</html>
