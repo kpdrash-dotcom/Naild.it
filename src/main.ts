@@ -303,7 +303,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         Secure your appointment today and let Naild.it create your perfect set.
     </p>
 
-    <a href="#">
+    <a href="https://wa.me/94713119127">
         Book Now 
     </a>
 
