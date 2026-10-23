@@ -326,7 +326,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         Secure your appointment today and let Naild.it create your perfect set.
     </p>
     <a href="https://wa.me/94713119127?text=%F0%9F%92%85%20Hello%20Naild.it!%0A%0AName%3A%0AContact%20No%3A%0AAddress%3A%0AChosen%20Design%3A%0AQuantity%3A%0AAdditional%20Notes%3A%0A%0A%F0%9F%93%8F%20Please%20make%20sure%20to%20send%20your%20sizing%20photos%20along%20with%20your%20message."target="_blank">
-Order Now
+Book Now
 </a>
 
 </section>
