@@ -185,9 +185,44 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
             <img src="/images/Bedazzled3.jpeg" alt="">
             <h3>Golden Rose</h3>
         </div>
+    
 
         
 
+    </div>
+    <div class="section-header">
+        <div>
+            
+            <h2>Champagne Nails</h2>
+        </div>
+
+        <a href="trending3.html" class="view-all-btn">
+            VIEW MORE
+        </a>
+    </div>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/Champagne1.jpeg" alt="">
+            <h3>Ruby Bloom</h3>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/Champagne2.jpeg" alt="">
+            <h3>Emerald Glow</h3>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <span class="discount-badge">20% OFF</span>
+            <img src="/images/Champagne3.jpeg" alt="">
+            <h3>Golden Rose</h3>
+        </div>
     </div>
 
 </section>
