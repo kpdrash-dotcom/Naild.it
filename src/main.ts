@@ -191,14 +191,40 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
 
 </section>
+<section id="sizing" class="sizing">
+
+    <div class="sizing-header">
+        <p>NAILD.IT</p>
+        <h2>Sizing Guide</h2>
+        <span>Choose the sizing method that works best for you</span>
+    </div>
 
 
+    <div class="sizing-method">
 
+        <div class="method-text">
+            <h3>Coin Method</h3>
 
+            <p>
+                Send two clear photos with a Sri Lankan Rs.2 coin beside
+                your nails. Photos should be taken directly from above.
+            </p>
 
+            <ul>
+                <li>Quick and convenient</li>
+                <li>Perfect if no tape measure is available</li>
+                <li>Use a clear overhead photo</li>
+            </ul>
+        </div>
 
+        <div class="method-images">
+            <img src="/images/coin-method-1.png" alt="">
+            <img src="/images/coin-method-2.png" alt="">
+        </div>
 
+    </div>
 
+</section>
 
 <section id="services" class="pricing">
 
@@ -291,9 +317,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
 
 </section>
-
-
-
 <section id="contact" class="contact">
 
     <h2>Book Your Appointment</h2>
@@ -308,50 +331,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </a>
 
 </section>
-
-<section id="sizing" class="sizing">
-
-    <div class="sizing-header">
-        <p>NAILD.IT</p>
-        <h2>Sizing Guide</h2>
-        <span>Choose the sizing method that works best for you</span>
-    </div>
-
-
-    <div class="sizing-method">
-
-        <div class="method-text">
-            <h3>Coin Method</h3>
-
-            <p>
-                Send two clear photos with a Sri Lankan Rs.2 coin beside
-                your nails. Photos should be taken directly from above.
-            </p>
-
-            <ul>
-                <li>Quick and convenient</li>
-                <li>Perfect if no tape measure is available</li>
-                <li>Use a clear overhead photo</li>
-            </ul>
-        </div>
-
-        <div class="method-images">
-            <img src="/images/coin-method-1.png" alt="">
-            <img src="/images/coin-method-2.png" alt="">
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-
-
 <footer class="footer">
     <div class="footer-logo">
         <img src="/images/logobag.png" alt="Naild.it">
