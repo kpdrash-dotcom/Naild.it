@@ -253,8 +253,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         </div>
 
         <div class="method-images">
-            <img src="/images/coin-method-1.png" alt="">
-            <img src="/images/coin-method-2.png" alt="">
+            <img src="/images/coin-method-1.jpeg" alt="">
+            <img src="/images/coin-method-2.jpeg" alt="">
         </div>
 
     </div>
