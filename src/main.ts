@@ -247,7 +247,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
             <ul>
                 <li>Quick and convenient</li>
-                <li>Perfect if no tape measure is available</li>
                 <li>Use a clear overhead photo</li>
             </ul>
         </div>
