@@ -231,15 +231,12 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <div class="sizing-header">
         <p>NAILD.IT</p>
         <h2>Sizing Guide</h2>
-        <span>Choose the sizing method that works best for you</span>
     </div>
 
 
     <div class="sizing-method">
 
         <div class="method-text">
-            <h3>Coin Method</h3>
-
             <p>
                 Send two clear photos with a Sri Lankan Rs.2 coin beside
                 your nails. Photos should be taken directly from above.
@@ -252,8 +249,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         </div>
 
         <div class="method-images">
-            <img src="/images/coin-method-1.jpeg" alt="">
-            <img src="/images/coin-method-2.jpeg" alt="">
+            <img src="/images/coin-method-1.jpeg" alt="cc">
+            <img src="/images/coin-method-2.jpeg" alt="cc">
         </div>
 
     </div>
@@ -285,7 +282,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <div class="tier">
 
-        <h3>INTERMEDIATE</h3>
+        <h3>INTERMEDIATE (Per Nail)</h3>
 
         <div class="price-row">
             <span>Ombre</span>
